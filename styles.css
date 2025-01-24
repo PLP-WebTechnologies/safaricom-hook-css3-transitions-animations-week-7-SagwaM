@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.container {
+  padding: 30px;
+  max-width: 600px;
+  margin: 50px auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button with Hover Transition */
+.hover-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background: #1ad2cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hover-button:hover {
+  transform: scale(1.2);
+  background-color: #0056b3;
+}
+
+/* Hidden Class for Toggle Functionality */
+.hidden {
+  display: none;
+}
+
+/* Animated Banner */
+.banner {
+  margin: 20px auto;
+  padding: 10px;
+  background: #1ad2cc;
+  color: white;
+  border-radius: 5px;
+  animation: slide-in 2s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Area Calculation Section */
+.area {
+  margin: 20px 0;
+}
+
+.area input {
+  padding: 10px;
+  margin: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 120px;
+}
+
+.area button {
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.area button:hover {
+  background: #218838;
+}
+
+.area p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Loading Spinner */
+.spinner {
+  margin: 20px auto;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ddd;
+  border-top: 5px solid #3bd316;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Adding an 'animated' class for dynamic animations */
+.animated {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
